@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Sign Up</h1>
+    </header>
+    <main class="form-container">
+      <form action="signup.php" method="post" class="signup-form">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" name="name" id="name" class="form-input" />
+
+        <label for="l-name" class="form-label">Lastname:</label>
+        <input type="text" name="l-name" id="l-name" class="form-input" />
+
+        <label for="u-name" class="form-label">Username:</label>
+        <input type="text" name="u-name" id="u-name" class="form-input" />
+
+        <label for="p-word" class="form-label">Password:</label>
+        <input type="password" name="p-word" id="p-word" class="form-input" />
+
+        <label for="fav" class="form-label">Pick your favorite genre:</label>
+        <select name="fav" id="fav" class="form-select">
+          <option value="fantasy">Fantasy</option>
+          <option value="adventures">Adventures</option>
+          <option value="drama">Drama</option>
+          <option value="romance">Romance</option>
+          <option value="action">Action</option>
+        </select>
+        <input type="submit" name="submit" value="submit" class="btn" />
+        <input type="reset" name="reset" value="Cancel" class="btn" />
+      </form>
+    </main>
+  </body>
+</html>
